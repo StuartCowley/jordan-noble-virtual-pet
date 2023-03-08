@@ -1,0 +1,17 @@
+{
+  "name": "virtual-pet",
+  "version": "1.0.0",
+  "description": "jordan's virtual pet",
+  "main": "index.js",
+  "scripts": {
+    "test": "virtualpet"
+  },
+  "keywords": [
+    "jordan",
+    "virtual",
+    "pet",
+    "commandshift"
+  ],
+  "author": "Jordan Noble",
+  "license": "ISC"
+}
