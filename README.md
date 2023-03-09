@@ -1,1 +1,1 @@
-This is my virtual pet project, completed as part of my studies with Command Shift.
+This is my virtual pet, created during my studies with Command Shift.
