@@ -25,6 +25,15 @@ Pet.prototype.walk = function() {
     }
 }
 
+Pet.prototype.feed = function() {
+    if (this.hunger - 3 < 0) {
+        this.hunger = MINIMUM_HUNGER;
+    }
+    else {
+        this.hunger -= 3;
+    }
+}
+
 module.exports = Pet;
 
 //The Pet should have an initial hunger of 0

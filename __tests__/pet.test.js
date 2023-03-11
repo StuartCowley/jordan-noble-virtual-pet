@@ -33,14 +33,23 @@ describe('growUp', () => {
 });
 
 describe('walk', () => {
-  it ('increases fitness by 4, without exceeding 10', () => {
+  it ('increases fitness by 4, without exceeding MAXIMUM_FITNESS', () => {
     const pet = new Pet ('Fido')
     pet.fitness = 4;
     pet.walk();
     expect(pet.fitness).toEqual(8);
-    pet.fitness = 8;
     pet.walk();
     expect(pet.fitness).toEqual(10);
   });
 });
 
+describe('feed', () => {
+  it ('decreases hunger, without being less than MINIMUM_HUNGER', () => {
+    const pet = new Pet ('Fido')
+    pet.hunger = 5;
+    pet.feed();
+    expect(pet.hunger).toEqual(2);
+    pet.feed();
+    expect(pet.hunger).toEqual(0);
+  });
+});
