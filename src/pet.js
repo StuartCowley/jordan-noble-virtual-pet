@@ -35,11 +35,3 @@ Pet.prototype.feed = function() {
 }
 
 module.exports = Pet;
-
-//The Pet should have an initial hunger of 0
-
-//The growUp method should increase the hunger property by 5
-
-//The Pet should have an initial fitness of 10
-
-//The growUp method should decrease the fitness property by 3
