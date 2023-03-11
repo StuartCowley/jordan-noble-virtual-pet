@@ -67,4 +67,13 @@ describe('checkup', () => {
     pet.checkUp();
     expect(console.log('I feel great!'));
   });
+
+describe('isAlive', () => {
+  it ('return true if fitness > 0, hunger < 10, age < 30', () => {
+    pet.fitness = 0, pet.hunger = 10, pet.age = 30;
+    expect(pet.isAlive).toBe(false);
+    pet.fitness = 5, pet.hunger = 8, pet.age = 10;
+    expect(pet.isAlive).toBe(true);
+  });  
+  });
 });
