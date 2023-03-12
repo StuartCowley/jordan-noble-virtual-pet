@@ -2,7 +2,6 @@ const MAXIMUM_FITNESS = 10;
 const MINIMUM_AGE = 0;
 const MINIMUM_HUNGER = 0;
 
-
 function Pet(name) {
     this.name = name;
     this.age = MINIMUM_AGE;
@@ -27,7 +26,7 @@ Pet.prototype.growUp = function() {
   };
 
 Pet.prototype.walk = function() {
-     if (!this.isAlive) {
+    if (!this.isAlive) {
         throw new Error('Your pet is no longer alive :(');
       }
     if (this.fitness + 4 >= 10) {
