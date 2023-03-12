@@ -9,20 +9,15 @@ You will therefore need to have node.js installed on your machine to run this pr
 The virtual pet can be fed, exercised, grow up and have children. The pet can also die, so be careful!
 
 ## How-to
-1. 
-Download the project to your machine, and navigate to the ./virtualpet directory in your command line.
+1. Download the project to your machine, and navigate to the ./virtualpet directory in your command line.
 
-2. 
-Open the Node REPL - { $node }
+2. Open the Node REPL - { $node }
 
-3. 
-Initalize the pet constructor function. { const pet = require('./src/pet'); }
+3. Initalize the pet constructor function. { const pet = require('./src/pet'); }
 
-4. 
-Now you can create and name your pet. { const Fido = new pet('Fido'); }
+4. Now you can create and name your pet. { const Fido = new pet('Fido'); }
 
-5. 
-Your pet's initial stats are as follows: 
+5. Your pet's initial stats are as follows: 
 
     name: 'Fido',
     
@@ -34,8 +29,7 @@ Your pet's initial stats are as follows:
     
     children: []
     
-6. 
-There are several functions you can apply to your pet to change these stats:
+6. There are several functions you can apply to your pet to change these stats:
 
  .growUp() - Increases age by 1, increase hunger by 5, decrease fitness by 3.
  	
@@ -70,8 +64,7 @@ There are several functions you can apply to your pet to change these stats:
  	{ Fido.children[0].feed() }
 
  
-7. 
-Your pet can die :(. If your pet's age is 30 or greater, it's hunger is 10 or greater, or if it's fitness is 0 or fewer, your pet will die. 
+7. Your pet can die :(. If your pet's age is 30 or greater, it's hunger is 10 or greater, or if it's fitness is 0 or fewer, your pet will die. 
 The .walk, .growUp and .feed functions will cease to work, and will instead return a message informing you of your pet's passing.
 Make sure you're regularly checking your pet's stats by entering your pet's name into the command line, and using the.feed() and .walk() functions to keep them nice and healthy!
     
