@@ -8,6 +8,7 @@ function Pet(name) {
     this.age = MINIMUM_AGE;
     this.hunger = MINIMUM_HUNGER;
     this.fitness = MAXIMUM_FITNESS;
+    this.children = [];
 }
 
 Pet.prototype = {
@@ -67,10 +68,10 @@ Pet.prototype.checkUp = function() {
     }
 }
 
-// add similar logic to the walk and growUp functions.
-
-// make the checkUp function return this same string if pet is dead.
-
-// if fitness <= 0, or age >= 30, throw an error
+Pet.prototype.adoptChild = function(child) {
+    this.children.push(child);
+    console.log(this);
+    return this;
+}
 
 module.exports = Pet;

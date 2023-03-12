@@ -99,6 +99,7 @@ describe('checkup', () => {
     pet.checkUp();
     expect(console.log('I feel great!'));
   });
+});
 
 describe('isAlive', () => {
 
@@ -115,5 +116,26 @@ describe('isAlive', () => {
     pet.age = 30;
     expect(() => pet.checkUp()).toThrow('Your pet is no longer alive :(');
   });
+});
+
+describe('adoptChild', () => {
+  it('adds child array element to .children property', () => {
+    const parent = new Pet('Fido');
+    const child = new Pet('Fido Jr');
+    expect(parent.adoptChild(child)).toEqual ({
+      name: 'Fido',
+      age: 0,
+      hunger: 0,
+      fitness: 10,
+      children: [{
+        name: 'Fido Jr',
+        age: 0,
+        hunger: 0,
+        fitness: 10,
+        children: [],
+      }],
+    });
   });
 });
+
+  
