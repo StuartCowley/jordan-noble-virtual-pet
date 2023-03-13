@@ -4,14 +4,11 @@
   "description": "jordan's virtual pet",
   "main": "index.js",
   "scripts": {
-    "test": "virtualpet"
+    "test": "jest"
   },
-  "keywords": [
-    "jordan",
-    "virtual",
-    "pet",
-    "commandshift"
-  ],
   "author": "Jordan Noble",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "jest": "^29.5.0"
+  }
 }
